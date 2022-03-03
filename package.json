@@ -1,0 +1,25 @@
+{
+  "name": "cypress-first",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingzhengru/cypress-first.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingzhengru/cypress-first/issues"
+  },
+  "homepage": "https://github.com/dingzhengru/cypress-first#readme",
+  "dependencies": {
+    "cypress": "^9.5.1",
+    "jimp": "^0.16.1",
+    "tesseract.js": "^2.1.5"
+  }
+}
