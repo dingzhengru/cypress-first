@@ -2,7 +2,7 @@
 
 ## 如何使用 node_modules
 
-- 官方說明: [連結](https://docs.cypress.io/faq/questions/using-cypress-faq#How-do-I-require-or-import-node-modules-in-Cypress)
+- 官方文件: [連結](https://docs.cypress.io/faq/questions/using-cypress-faq#How-do-I-require-or-import-node-modules-in-Cypress)
 - cypress task: [連結](https://docs.cypress.io/api/commands/task)
 - cypress plugin: [連結](https://docs.cypress.io/api/plugins/writing-a-plugin)
 
@@ -13,3 +13,7 @@
 ## 路徑
 
 讀取檔案時的路徑，在 plugins/index.js 讀取時，需是像這樣 `cypress/downloads/captcha-1926.png`
+
+## 指令
+
+- 官方文件: [連結](https://docs.cypress.io/guides/guides/command-line)

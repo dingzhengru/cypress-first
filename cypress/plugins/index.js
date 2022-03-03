@@ -43,5 +43,21 @@ module.exports = (on, config) => {
       await worker.terminate();
       return result.data.text;
     },
+    async getImageBase64Text(imgBase64) {
+      console.log('--------------task: getImageText----------------');
+      const worker = createWorker();
+      await worker.load();
+      await worker.loadLanguage('eng');
+      await worker.initialize('eng');
+
+      const imgBuffer = Buffer.from(imgBase64.split(',')[1], 'base64');
+
+      const jimpImage = await Jimp.read(imgBuffer);
+      const img = await jimpImage.greyscale().contrast(1).getBase64Async(Jimp.AUTO);
+      const result = await worker.recognize(img);
+      console.log('------------getImageText------------');
+      await worker.terminate();
+      return result.data.text;
+    },
   });
 };
