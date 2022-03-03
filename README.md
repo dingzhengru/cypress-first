@@ -17,3 +17,7 @@
 ## 指令
 
 - 官方文件: [連結](https://docs.cypress.io/guides/guides/command-line)
+
+## 讀取文件
+
+- 官方文件: [fixture 連結](https://docs.cypress.io/api/commands/fixture)
